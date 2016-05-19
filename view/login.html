@@ -1,0 +1,24 @@
+<!-- LOGIN -->
+<form id="frmLogin" role="form">
+    <h2>Login</h2>
+
+    <div class="form-group">
+        <label for="txtEmail">Email address</label>
+        <input type="email" ng-model="login.user.email" class="form-control" id="txtEmail" placeholder="Enter email" name="email" />
+    </div>
+    <div class="form-group">
+        <label for="txtPass">Password</label>
+        <input type="password" ng-model="login.user.password"  class="form-control" id="txtPass" placeholder="Password" name="password" />
+    </div>
+    <button type="submit" ng-click="login.verifyRegular(login.user)" class="btn btn-default btn-block">Login</button>
+    <br />
+    <br />
+    <h4>Login with</h4>
+    <a href="#" class="btn btn-primary bt-social" ng-click="login.verifySocial($event)" data-provider="facebook">Facebook</a>
+    <a href="#" class="btn btn-info bt-social" ng-click="login.verifySocial($event)" data-provider="twitter">Twitter</a>
+
+    <!-- <a href="#" class="btn btn-danger bt-social" data-provider="google">Google+</a> --><a href="#" class="btn btn-default bt-social" data-provider="github">GitHub</a>
+    <a href="#" class="btn btn-warning" ng-click="login.verifyAnonymous()" id="btAnon">Anon</a>
+
+</form>
+<!-- / LOGIN -->

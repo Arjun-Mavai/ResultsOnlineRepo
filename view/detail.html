@@ -1,0 +1,42 @@
+<form name="myForm">
+  <div class="form-group">
+    
+      <label for="rollnumber">Roll Number</label>
+      <input type="number" name="rollnumber" id="rollnumber" class="form-control" ng-model="editStudent.student.rollnumber" required>
+
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname" class="form-control" ng-model="editStudent.student.firstname" required>
+
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname" class="form-control" ng-model="editStudent.student.lastname" required>
+  
+      <label for="lastname">Email</label>
+      <input type="email" name="email" id="email" class="form-control" ng-model="editStudent.student.email" required>
+
+      <label for="lastname">Date Of Birth</label>
+      <input type="date" placeholder="yyyy-MM-dd" name="dob" id="dob" class="form-control"  ng-model="editStudent.student.date_of_birth" required>
+      
+      <label for="lastname">Phone Number</label>
+      <input type="text" name="phone" id="phone" class="form-control" ng-model="editStudent.student.phone_number" required>
+
+      <label for="english">English</label>
+      <input type="number" name="english" id="english" class="form-control" ng-model="editStudent.student.english" required>
+  
+      <label for="hindi">Hindi</label>
+      <input type="number" name="hindi" id="hindi" class="form-control" ng-model="editStudent.student.hindi" required>
+    
+      <label for="maths">Maths</label>
+      <input type="number" name="maths" id="maths" class="form-control" ng-model="editStudent.student.maths" required>
+  
+      <label for="science">Science</label>
+      <input type="number" name="science" id="science" class="form-control" ng-model="editStudent.student.science" required>
+  
+      <label for="social">Social</label>
+      <input type="number" name="social" id="social" class="form-control" ng-model="editStudent.student.social" required>
+      
+    <br>
+    <button ng-click="editStudent.cancel()" class="btn btn-primary">Cancel</button>
+    <button ng-click="myForm.$valid && editStudent.save()" class="btn btn-primary">Save</button>
+    <button ng-click="editStudent.destroy()" ng-show="editStudent.student.$id" class="btn btn-danger">Delete</button>
+  </div>
+</form>

@@ -1,0 +1,15 @@
+<!-- REGISTER -->
+<form id="frmRegister" role="form">
+    <h2>Register</h2>
+
+    <div class="form-group">
+        <label for="txtRegEmail">Email address</label>
+        <input type="email" ng-model="register.user.email" class="form-control" id="txtEmail" placeholder="Enter email" name="email" />
+    </div>
+    <div class="form-group">
+        <label for="txtRegPass">Password</label>
+        <input type="password" ng-model="register.user.password" class="form-control" id="txtPass" placeholder="Password" name="password" />
+    </div>
+    <button type="submit" ng-click="register.registerUser(register.user)" class="btn btn-default">Register</button>
+</form>
+<!-- / REGISTER -->

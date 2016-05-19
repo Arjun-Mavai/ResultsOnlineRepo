@@ -1,0 +1,86 @@
+<div class="container">
+      <div class="row">
+      
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+   
+   
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{editStudent.student.firstname + " "}} {{editStudent.student.lastname}}</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <!--<div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>-->
+                  <div class="col-md-3 col-lg-3 " align="center">
+                     <button type="button" class="btn btn-default btn-lg" align="center">
+                    <span class="glyphicon glyphicon-user" aria-label="Left Align"></span>
+                  </button>
+                  </div>
+                 
+                <div class=" col-md-9 col-lg-9 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>Roll Number:</td>
+                        <td>{{editStudent.student.rollnumber}}</td>
+                      </tr>
+                      <tr>
+                        <td>First Name:</td>
+                        <td>{{editStudent.student.firstname}}</td>
+                      </tr>
+                      <tr>
+                        <td>Last Name:</td>
+                        <td>{{editStudent.student.lastname}}</td>
+                      </tr>
+                      <tr>
+                        <td>Email:</td>
+                        <td><a href="mailto:{{editStudent.student.email}}">{{editStudent.student.email}}</a></td>
+                      </tr>
+                      <tr>
+                      <tr>
+                        <td>Date Of Birth:</td>
+                        <td>{{editStudent.student.date_of_birth|date:'MM/dd/yyyy'}}</td>
+                      </tr>
+                      <tr>
+                        <td>Phone Number</td>
+                        <td>{{editStudent.student.phone_number}}</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>English</td>
+                        <td>{{editStudent.student.english}}</td>
+                      </tr>
+                      <tr>
+                        <td>Hindi</td>
+                        <td>{{editStudent.student.hindi}}</td>
+                      </tr>
+                      <tr>
+                        <td>Maths</td>
+                        <td>{{editStudent.student.maths}}</td>
+                      </tr>
+                      <tr>
+                        <td>Science</td>
+                        <td>{{editStudent.student.science}}</td>
+                      </tr>
+                      <tr>
+                        <td>Maths</td>
+                        <td>{{editStudent.student.social}}</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <!--<p class=" text-info">{{editStudent.date|date:'yyyy-MM-dd'}}</p>-->
+                </div>
+              </div>
+            </div>
+                 <div class="panel-footer">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <span class="pull-right">
+                            <a ng-href="#/edit/{{editStudent.student.$id}}" data-original-title="Edit this user" data-toggle="tooltip"  class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                            <button ng-click="editStudent.destroy()" ng-show="editStudent.student.$id" data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></button>
+                        </span>
+                 </div>
+          </div>
+        </div>
+      </div>
+    </div>
