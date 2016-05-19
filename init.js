@@ -127,7 +127,7 @@
       }
   
       //Remove students list when no longer needed.
-      //ref.onDisconnect().remove();
+     // ref.onDisconnect().remove();
       return deferred.promise;
   }
 })
